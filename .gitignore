@@ -16,7 +16,6 @@ test/version_tmp
 tmp
 *~
 *BAK
-
 # YARD artifacts
 .yardoc
 _yardoc
