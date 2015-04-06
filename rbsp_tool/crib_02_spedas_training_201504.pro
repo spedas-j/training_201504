@@ -54,6 +54,7 @@
   map2d_set, /erase     ;Set "erase" keyword to clear the window and redraw the lat-lon grid 
   overlay_map_sc_ifoot, 'rbspa_ifoot_geo_lat', 'rbspa_ifoot_geo_lon', $
     ['2013-07-25/15:00','2013-07-25/23:00'] 
+  overlay_map_coast
   
   ;Obtain the VAP-B footprints and superpose it on the VAP-A plot. 
   rbsp_ifoot, probe='b'
