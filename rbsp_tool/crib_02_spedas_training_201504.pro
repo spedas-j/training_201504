@@ -45,6 +45,7 @@
   map2d_coord, 'geo'   ;Set the coordinate system to geographical coordinates 
   window, 0, xsize=800, ysize=640 & erase     ;Generate an empty window 
   map2d_set   ;Draw the latitude-longitude grid (every 10 deg in lat and 15 deg in lon) on the window. 
+  overlay_map_coast   ;Show the world map by drawing the coast lines
   
   ;Draw the trace of ionospheric footprint for VAP-A, superposed by the world map.  
   overlay_map_sc_ifoot, 'rbspa_ifoot_geo_lat', 'rbspa_ifoot_geo_lon' 
