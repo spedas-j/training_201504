@@ -49,7 +49,7 @@ PRO overlay_map_sc_ifoot, vn_glat, vn_glon, trange, $
   te = trange[1]
 
 ; Set the plot interval  
-  get_timespan, tr_orig 
+  get_timespan, tr_orig
   timespan, [ts,te]
   
 ; Clip the data for the plot interval
@@ -85,7 +85,7 @@ PRO overlay_map_sc_ifoot, vn_glat, vn_glon, trange, $
   
   idx=WHERE( tlat.x GE ts AND tlat.x LE te, cnt)
   IF cnt LT 1 THEN BEGIN
-    PRINT, 'overlay_map_noaa_ifoot: No data in the time range'
+    PRINT, 'No data in the time range'
     PRINT, time_string([ts,te]) 
     RETURN
   ENDIF
@@ -175,9 +175,16 @@ PRO overlay_map_sc_ifoot, vn_glat, vn_glon, trange, $
         
 
 ;;;; Plot end
- 
+    
+  
 
-  timespan, tr_orig ; Restore the original time range setting
+
+
+
+
+
+
+  timespan, tr_orig   ;Restore the original time range 
 
   return
 end
